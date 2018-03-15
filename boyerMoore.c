@@ -4,9 +4,20 @@
 #define alph 256
 
 
-void preProcessing(char [],char [], int []);
+void preProcessing(char [], int []);
 void boyerMoore(char [], char []);
 
+
+void preProcessing(char p[], int preArray[alphebet]){
+    int i;
+    for(i=0;i<alphebet;i++){
+        preArray[i] = -1;
+    }
+
+    for(i=0;i<strlen(p);i++){
+        preArray[(int)p[i]] = i;
+    }
+}
 
 void boyerMoore(char t[], char p[]){
 
@@ -14,7 +25,7 @@ void boyerMoore(char t[], char p[]){
     int m = strlen(p);
 
     int prePro[alph];
-    preProcessing(t,p,prePro);
+    preProcessing(p,prePro);
 
     int shifts = 0;
 
