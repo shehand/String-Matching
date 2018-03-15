@@ -8,9 +8,9 @@ void preProcessing(char [], int []);
 void boyerMoore(char [], char []);
 
 
-void preProcessing(char p[], int preArray[alphebet]){
+void preProcessing(char p[], int preArray[alph]){
     int i;
-    for(i=0;i<alphebet;i++){
+    for(i=0;i<alph;i++){
         preArray[i] = -1;
     }
 
