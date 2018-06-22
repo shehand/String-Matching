@@ -33,3 +33,5 @@ void naive(char t[], char p[]){
 
     }
 }
+
+//asfdsgkdjflsadlhfgsadkjlgfwasd
