@@ -104,3 +104,8 @@ lps[] is [0, 1, 2, 0, 1, 2, 3]
 
 Searching Algorithm:
 Unlike Naive algorithm, where we slide the pattern by one and compare all characters at each shift, we use a value from lps[] to decide the next characters to be matched. The idea is to not match a character that we know will anyway match.
+
+How to use lps[] to decide next positions (or to know a number of characters to be skipped)?
+
+- We start comparison of pat[j] with j = 0 with characters of current window of text.
+- We keep matching characters txt[i] and pat[j] and keep incrementing i and j while pat[j] and txt[i] keep matching.
