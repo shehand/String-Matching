@@ -29,3 +29,6 @@ Like the Naive Algorithm, Rabin-Karp algorithm also slides the pattern one by on
 
 1) Pattern itself.
 2) All the substrings of text of length m.
+
+Since we need to efficiently calculate hash values for all the substrings of size m of text, we must have a hash function which has following property.
+Hash at the next shift must be efficiently computable from the current hash value and next character in text or we can say hash(txt[s+1 .. s+m]) must be efficiently computable from hash(txt[s .. s+m-1]) and txt[s+m] i.e., hash(txt[s+1 .. s+m])= rehash(txt[s+m], hash(txt[s .. s+m-1]) and rehash must be O(1) operation.
