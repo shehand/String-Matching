@@ -6,4 +6,4 @@
 
 ## Algorithms
 
-> - 
+> - Boyer - Moore Algorithm
