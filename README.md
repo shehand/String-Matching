@@ -85,3 +85,19 @@ For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the m
               which is also a suffix of pat[0..i]. 
               
 Note : lps[i] could also be defined as longest prefix which is also proper suffix. We need to use properly at one place to make sure that the whole substring is not considered.
+
+Examples of lps[] construction:
+For the pattern “AAAA”, 
+lps[] is [0, 1, 2, 3]
+
+For the pattern “ABCDE”, 
+lps[] is [0, 0, 0, 0, 0]
+
+For the pattern “AABAACAABAA”, 
+lps[] is [0, 1, 0, 1, 2, 0, 1, 2, 3, 4, 5]
+
+For the pattern “AAACAAAAAC”, 
+lps[] is [0, 1, 2, 0, 1, 2, 3, 3, 3, 4] 
+
+For the pattern “AAABAAA”, 
+lps[] is [0, 1, 2, 0, 1, 2, 3]
