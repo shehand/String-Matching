@@ -3,3 +3,6 @@
 ## Language used
 
 > - C
+
+## Algorithms
+
