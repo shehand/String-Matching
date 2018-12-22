@@ -1,1 +1,1 @@
-# String-Matching
+# String-Matching Algorithms
