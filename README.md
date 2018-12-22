@@ -19,3 +19,5 @@ We will lookup the position of last occurence of mismatching character in patter
 
 Case 2 – Pattern move past the mismatch character
 We’ll lookup the position of last occurence of mismatching character in pattern and if character does not exist we will shift pattern past the mismatching character.
+
+Complexity - If the character is not present at all, then it may result in a shift by m (length of pattern). Therefore, the bad character heuristic takes O(n/m) time in the best case.
