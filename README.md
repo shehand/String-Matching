@@ -83,3 +83,5 @@ For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the m
 
  lps[i] = the longest proper prefix of pat[0..i] 
               which is also a suffix of pat[0..i]. 
+              
+Note : lps[i] could also be defined as longest prefix which is also proper suffix. We need to use properly at one place to make sure that the whole substring is not considered.
