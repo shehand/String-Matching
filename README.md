@@ -80,3 +80,6 @@ KMP algorithm preprocesses pat[] and constructs an auxiliary lps[] of size m (sa
 name lps indicates longest proper prefix which is also suffix.. A proper prefix is prefix with whole string not allowed. For example, prefixes of “ABC” are “”, “A”, “AB” and “ABC”. Proper prefixes are “”, “A” and “AB”. Suffixes of the string are “”, “C”, “BC” and “ABC”.
 We search for lps in sub-patterns. More clearly we focus on sub-strings of patterns that are either prefix and suffix.
 For each sub-pattern pat[0..i] where i = 0 to m-1, lps[i] stores length of the maximum matching proper prefix which is also a suffix of the sub-pattern pat[0..i].
+
+ lps[i] = the longest proper prefix of pat[0..i] 
+              which is also a suffix of pat[0..i]. 
