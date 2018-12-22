@@ -101,3 +101,6 @@ lps[] is [0, 1, 2, 0, 1, 2, 3, 3, 3, 4]
 
 For the pattern “AAABAAA”, 
 lps[] is [0, 1, 2, 0, 1, 2, 3]
+
+Searching Algorithm:
+Unlike Naive algorithm, where we slide the pattern by one and compare all characters at each shift, we use a value from lps[] to decide the next characters to be matched. The idea is to not match a character that we know will anyway match.
