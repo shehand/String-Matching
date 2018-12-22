@@ -22,4 +22,4 @@ We’ll lookup the position of last occurence of mismatching character in patter
 
 Complexity - If the character is not present at all, then it may result in a shift by m (length of pattern). Therefore, the bad character heuristic takes O(n/m) time in the best case.
 
-> - Rabin - Carp Algorithm
+> - Rabin - Karp Algorithm
