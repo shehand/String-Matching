@@ -45,4 +45,4 @@ h: d^(m-1)
 
 Complexity - The average and best case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm). Worst case of Rabin-Karp algorithm occurs when all characters of pattern and text are same as the hash values of all the substrings of txt[] match with hash value of pat[]. For example pat[] = “AAA” and txt[] = “AAAAAAA”.
 
-> - KMP Algorithm
+> - KMP (Knuth Morris Pratt) Algorithm
